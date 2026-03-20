@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Databases (SQLite, etc)
+*.db
+*.sqlite3
+migrations/
+*.ini
+
+.env
+.env.local
+.env.*
+auth_data.json
+secrets.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+logs/
+*.log
+htmlcov/
+.pytest_cache/
+.coverage

@@ -1,0 +1,17 @@
+< ------------ INSERT Categories ------------>
+
+INSERT INTO public.categories
+("name", created_at, updated_at) VALUES 
+('Technology', TIMEZONE('utc', now()), TIMEZONE('utc', now())),
+('Science', TIMEZONE('utc', now()), TIMEZONE('utc', now())),
+('Lifestyle', TIMEZONE('utc', now()), TIMEZONE('utc', now())),
+('Travel', TIMEZONE('utc', now()), TIMEZONE('utc', now()));
+
+
+< ------------ INSERT Posts ------------>
+
+INSERT INTO public.posts
+(title, "content", user_id, category_id, created_at, updated_at) VALUES
+('Getting Started with SQLAlchemy', 'Content about SQLAlchemy...', 1, 1, TIMEZONE('utc', now()), TIMEZONE('utc', now())),
+('Python Best Practices', 'Content about Python...', 1, 2, TIMEZONE('utc', now()), TIMEZONE('utc', now())),
+('The Future of AI', 'Content about AI...', 1, 3, TIMEZONE('utc', now()), TIMEZONE('utc', now()));
